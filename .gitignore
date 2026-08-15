@@ -1,0 +1,9 @@
+# Quartus temporary build folders
+**/db/
+**/incremental_db/
+**/output_files/
+**/simulation/
+
+# Temporary lock & backup files
+*.flock
+*.bak
