@@ -1,0 +1,43 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Ketan\Desktop\Verilog-Projects\Logic_gates\and_gate\simulation\qsim
+vand_gate
+Z1 I>FMYTmoK29Tm?O[gAU;Ki1
+Z2 Vc6DzPFU2fN2eI<oFZ87jz2
+Z3 dC:\Users\Ketan\Desktop\Verilog-Projects\Logic_gates\and_gate\simulation\qsim
+Z4 w1786808309
+Z5 8and_gate.vo
+Z6 Fand_gate.vo
+L0 32
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+!i10b 1
+Z9 !s100 `g>N`9jW;=46G=Kcc:<iH0
+!s85 0
+Z10 !s108 1786808310.652000
+Z11 !s107 and_gate.vo|
+Z12 !s90 -work|work|and_gate.vo|
+!s101 -O0
+vand_gate_vlg_vec_tst
+!i10b 1
+!s100 5m>T3mV8HYTD7Q@m0^n=;0
+IQUAJ^PbmHQjA:83jzIIRZ2
+V_RNPLgejQ4@:Jl`O1^me>1
+R3
+w1786808308
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 30
+R7
+r1
+!s85 0
+31
+!s108 1786808310.701000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!s101 -O0
+R8

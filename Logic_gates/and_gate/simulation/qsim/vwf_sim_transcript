@@ -1,0 +1,135 @@
+Determining the location of the ModelSim executable...
+
+Using: C:\altera\13.1\modelsim_ase\win32aloem\
+
+To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
+Note: if both Questa Intel FPGA Edition and ModelSim executables are available, Questa Intel FPGA Edition will be used.
+
+**** Generating the ModelSim Testbench ****
+
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off and_gate -c and_gate --vector_source="C:/Users/Ketan/Desktop/Verilog-Projects/Logic_gates/and_gate/Waveform.vwf" --testbench_file="C:/Users/Ketan/Desktop/Verilog-Projects/Logic_gates/and_gate/simulation/qsim/Waveform.vwf.vt"
+
+TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
+    Info: Copyright (C) 2025  Altera Corporation. All rights reserved.
+    Info: Your use of Altera Corporation's design tools, logic functions 
+    Info: and other software and tools, and any partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Altera Program License 
+    Info: Subscription Agreement, the Altera Quartus Prime License Agreement,
+    Info: the Altera IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Altera and sold by Altera or its authorized distributors.  Please
+    Info: refer to the Altera Software License Subscription Agreements 
+    Info: on the Quartus Prime software download page.
+    Info: Processing started: Sat Aug 15 21:08:28 2026
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off and_gate -c and_gate --vector_source=C:/Users/Ketan/Desktop/Verilog-Projects/Logic_gates/and_gate/Waveform.vwf --testbench_file=C:/Users/Ketan/Desktop/Verilog-Projects/Logic_gates/and_gate/simulation/qsim/Waveform.vwf.vt
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+
+Completed successfully. 
+
+Completed successfully. 
+
+**** Generating the functional simulation netlist ****
+
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/Ketan/Desktop/Verilog-Projects/Logic_gates/and_gate/simulation/qsim/" and_gate -c and_gate
+
+TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
+    Info: Copyright (C) 2025  Altera Corporation. All rights reserved.
+    Info: Your use of Altera Corporation's design tools, logic functions 
+    Info: and other software and tools, and any partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Altera Program License 
+    Info: Subscription Agreement, the Altera Quartus Prime License Agreement,
+    Info: the Altera IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Altera and sold by Altera or its authorized distributors.  Please
+    Info: refer to the Altera Software License Subscription Agreements 
+    Info: on the Quartus Prime software download page.
+    Info: Processing started: Sat Aug 15 21:08:28 2026
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Ketan/Desktop/Verilog-Projects/Logic_gates/and_gate/simulation/qsim/ and_gate -c and_gate
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (204019): Generated file and_gate.vo in folder "C:/Users/Ketan/Desktop/Verilog-Projects/Logic_gates/and_gate/simulation/qsim//" for EDA simulation tool
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4761 megabytes
+    Info: Processing ended: Sat Aug 15 21:08:29 2026
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+Completed successfully. 
+
+**** Generating the ModelSim .do script ****
+
+C:/Users/Ketan/Desktop/Verilog-Projects/Logic_gates/and_gate/simulation/qsim/and_gate.do generated.
+
+Completed successfully. 
+
+**** Running the ModelSim simulation ****
+
+C:/altera/13.1/modelsim_ase/win32aloem//vsim -c -do and_gate.do
+
+Reading C:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+
+
+# 10.1d
+
+
+# do and_gate.do 
+
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+
+# -- Compiling module and_gate
+
+# 
+
+# Top level modules:
+# 	and_gate
+
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+
+# -- Compiling module and_gate_vlg_vec_tst
+
+# 
+# Top level modules:
+# 	and_gate_vlg_vec_tst
+
+# vsim -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver -c -t 1ps -novopt work.and_gate_vlg_vec_tst 
+
+# Loading work.and_gate_vlg_vec_tst
+# Loading work.and_gate
+
+# after#16
+
+# ** Note: $finish    : Waveform.vwf.vt(47)
+#    Time: 1 us  Iteration: 0  Instance: /and_gate_vlg_vec_tst
+
+Completed successfully. 
+
+**** Converting ModelSim VCD to vector waveform ****
+
+Reading C:/Users/Ketan/Desktop/Verilog-Projects/Logic_gates/and_gate/Waveform.vwf...
+
+Reading C:/Users/Ketan/Desktop/Verilog-Projects/Logic_gates/and_gate/simulation/qsim/and_gate.msim.vcd...
+
+Processing channel transitions... 
+
+Writing the resulting VWF to C:/Users/Ketan/Desktop/Verilog-Projects/Logic_gates/and_gate/simulation/qsim/and_gate_20260815210831.sim.vwf
+
+Finished VCD to VWF conversion.
+
+Completed successfully. 
+
+All completed.
